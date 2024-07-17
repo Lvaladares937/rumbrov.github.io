@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to right, #7B68EE, #7B68EE);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 150px; /* Ajuste conforme necessário */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Centraliza a logo e adiciona espaço abaixo dela */
+    border-radius: 85px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 300px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.testimonials {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+
+.testimonial-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 20px;
+}
+
+.testimonial p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.testimonial h3 {
+    font-size: 1.5em;
+    margin: 10px 0 5px;
+}
+
+.testimonial-position {
+    color: #777;
+    font-size: 1em;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .intro h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 992px) {
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro h1 {
+        font-size: 1.5em;
+    }
+
+    .benefit {
+        margin: 10px 0;
+    }
+
+    header img {
+        max-width: 190px; /* Ajuste conforme necessário */
+    }
+}
